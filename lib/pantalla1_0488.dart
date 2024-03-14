@@ -7,13 +7,20 @@ class Pantalla1_0488 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pantalla1 Gonzalez 0488'),
+        title: const Text('Pantalla1 Gonzalez 0488'),
         backgroundColor: Colors.grey,
       ),
       body: Center(
-        child: Column(children: [
-          ElevatedButton(onPressed: () {}, child: const Text("Pantalla1")),
-        ]),
+        child: Card(
+          color: Colors.blueAccent,
+          child: Padding(
+            padding: EdgeInsets.all(16),
+            child: Text(
+              "Tarjeta Gonzalez",
+              style: TextStyle(fontSize: 30, color: Colors.white),
+            ),
+          ),
+        ),
       ),
     );
     ;
